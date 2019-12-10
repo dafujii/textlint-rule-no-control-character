@@ -2,7 +2,7 @@
   "name": "textlint-rule-no-control-character",
   "description": "textlint rule that disallow to use control character.",
   "author": "dafujii",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "textlintrule"
