@@ -16,13 +16,18 @@ tester.run("rule", rule, {
     invalid: [
         // single match
         {
-            text: "It is bugs.",
+            text: "It is bugs.",
             output: "It is bugs.",
             errors: [
                 {
-                    message: "Found backspace.",
+                    message: "Found control character.",
                     line: 1,
-                    column: 12
+                    column: 1
+                },
+                {
+                    message: "Found control character.",
+                    line: 1,
+                    column: 13
                 }
             ]
         },
@@ -36,17 +41,17 @@ One more bugs`,
 One more bugs`,
             errors: [
                 {
-                    message: "Found backspace.",
+                    message: "Found control character.",
                     line: 1,
                     column: 7
                 },
                 {
-                    message: "Found backspace.",
+                    message: "Found control character.",
                     line: 1,
                     column: 13
                 },
                 {
-                    message: "Found backspace.",
+                    message: "Found control character.",
                     line: 3,
                     column: 9
                 }
